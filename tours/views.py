@@ -1,8 +1,10 @@
+import random
+
+from django.http import HttpResponseNotFound, HttpResponseServerError
 from django.shortcuts import render
 from django.views import View
-from django.http import HttpResponseNotFound, HttpResponseServerError
+
 import tours.data as data
-import random
 
 
 class MainView(View):
