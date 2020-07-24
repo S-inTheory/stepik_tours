@@ -14,7 +14,7 @@ class MainView(View):
         random_tours = random.sample(list(data.tours.items()), 6)
 
         return render(
-            request, r'tours\index.html', {'title': data.title,
+            request, r'tours/index.html', {'title': data.title,
                                            'description': data.description,
                                            'subtitle': data.subtitle,
                                            'tours': dict(random_tours),
