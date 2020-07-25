@@ -35,7 +35,7 @@ class DepartureView(View):
                 tourcount += 1
 
         return render(
-            request, r'tours\departure.html', {'title': data.title,
+            request, r'tours/departure.html', {'title': data.title,
                                                'tours': data.tours,
                                                'departures': data.departures,
                                                'from': data.departures[departure][3:],
@@ -52,7 +52,7 @@ class TourView(View):
 
     def get(self, request, id: int):
         return render(
-            request, r'tours\tour.html',
+            request, r'tours/tour.html',
             {'title': data.title,
              'tours': data.tours[id],
              'departures': data.departures,
